@@ -628,7 +628,7 @@ Transform:
   m_GameObject: {fileID: 678782715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.79, y: -2.73, z: 0}
-  m_LocalScale: {x: 0.2875, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1769570969}
@@ -651,7 +651,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.06, y: 5.75}
+    oldSize: {x: 2.11, y: 5.75}
     newSize: {x: 2.06, y: 5.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -677,7 +677,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.06, y: 5.75}
+    oldSize: {x: 2.11, y: 5.75}
     newSize: {x: 2.06, y: 5.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -706,7 +706,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -751,6 +751,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprite: {fileID: 678782719}
+  _outlineMaterial: {fileID: 2100000, guid: 6bcdec308014d0a43a294308bc08b0d6, type: 2}
+  _defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   _onPuzzleComplete: {fileID: 11400000, guid: 41fe7ffc97730f541bc8adf41720d451, type: 2}
 --- !u!1 &705570376
 GameObject:
@@ -1059,7 +1061,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1104,6 +1106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprite: {fileID: 1228502766}
+  _outlineMaterial: {fileID: 2100000, guid: 6bcdec308014d0a43a294308bc08b0d6, type: 2}
+  _defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   _onPuzzleCompleted: {fileID: 11400000, guid: 41fe7ffc97730f541bc8adf41720d451, type: 2}
 --- !u!61 &1228502768
 BoxCollider2D:

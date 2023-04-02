@@ -7,6 +7,9 @@ namespace Astroneer.Interactable
     {
         [SerializeField] private SpriteRenderer _sprite;
         
+        [SerializeField] private Material _outlineMaterial;
+        [SerializeField] private Material _defaultMaterial;
+        
         // possibly can be an error
         private IInteractor _interactor;
         
@@ -19,7 +22,7 @@ namespace Astroneer.Interactable
                 return;
             }
             
-            _sprite.color = Color.green;
+            _sprite.material = _outlineMaterial;
             _interactor.Interactable.Add(this);
         }
 
@@ -31,14 +34,17 @@ namespace Astroneer.Interactable
             {
                 return;
             }
-            
-            _sprite.color = Color.white;
+
+            _sprite.material = _defaultMaterial;
             _interactor.Interactable.Remove(this);
         }
 
         private void OnDisable()
         {
-            _interactor.Interactable.Remove(this);
+            if (_interactor != null)
+            {
+                _interactor.Interactable.Remove(this);
+            }
         }
 
         public abstract void Interact();
