@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Astroneer.Interactable;
 using UnityEngine;
 
@@ -8,8 +9,18 @@ namespace Astroneer.Player
     {
         public event Action<bool> OnPlayerInteract;
         
-        public IInteractable Interactable { get; set; }
-        
+        public List<IInteractable> Interactable { get; set; }
+
+        private void Awake()
+        {
+            Interactable = new List<IInteractable>();
+        }
+
+        private void Start()
+        {
+            Interactable.Clear();
+        }
+
         private void Update()
         {
             if (Interactable == null)
@@ -17,7 +28,11 @@ namespace Astroneer.Player
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Interactable.Interact();
+                foreach (IInteractable interactable in Interactable)
+                {
+                    interactable.Interact();   
+                }
+                
                 OnPlayerInteract?.Invoke(true);
             }
         }

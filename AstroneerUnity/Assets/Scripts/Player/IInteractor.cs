@@ -1,9 +1,10 @@
-﻿using Astroneer.Interactable;
+﻿using System.Collections.Generic;
+using Astroneer.Interactable;
 
 namespace Astroneer.Player
 {
     public interface IInteractor
     {
-        public IInteractable Interactable { get; set; }
+        public List<IInteractable> Interactable { get; set; }
     }
 }
