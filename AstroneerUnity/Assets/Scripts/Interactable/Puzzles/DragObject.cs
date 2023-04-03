@@ -20,7 +20,7 @@ namespace Astroneer.Interactable.Puzzles
         private void Awake()
         {
             _camera = Camera.main;
-            _startPosition = transform.position;
+            _startPosition = transform.localPosition;
         }
 
         public void OnDrag(PointerEventData eventData)

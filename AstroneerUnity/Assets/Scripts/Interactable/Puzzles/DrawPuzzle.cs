@@ -21,11 +21,6 @@ namespace Astroneer.Interactable.Puzzles
             _handle.OnRealse -= CheckWin;
         }
 
-        public override void Interact()
-        {
-            
-        }
-
         private void CheckWin()
         {
             if (_pathPointManager.IsAllPointsPassed)
