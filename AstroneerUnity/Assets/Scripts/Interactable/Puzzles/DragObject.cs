@@ -1,18 +1,26 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Astroneer.Interactable.Puzzles
 {
     public class DragObject : MonoBehaviour, IDragHandler, IEndDragHandler
     {
+        public event Action OnRealse;
+        
         [SerializeField] private Rigidbody2D _rb;
+
+        [SerializeField] private TrailRenderer _trail;
         
         private Vector3 _mouseOffset;
+        private Vector3 _startPosition;
+        
         private Camera _camera;
 
         private void Awake()
         {
             _camera = Camera.main;
+            _startPosition = transform.position;
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -31,6 +39,13 @@ namespace Astroneer.Interactable.Puzzles
         public void OnEndDrag(PointerEventData eventData)
         {
             _rb.velocity = Vector2.zero;
+            OnRealse?.Invoke();
+        }
+
+        public void ResetAll()
+        {
+            transform.localPosition = _startPosition;
+            _trail.Clear();
         }
     }
 }
