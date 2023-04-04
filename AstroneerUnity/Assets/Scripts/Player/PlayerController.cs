@@ -8,6 +8,7 @@ namespace Astroneer.Player
         [SerializeField] private BoolEventSO _onPuzzleStarted;
         
         [SerializeField] private PlayerMovement _playerMovement;
+
         [SerializeField] private PlayerInteract _playerInteract;
 
         [SerializeField] private PlayerAnimationController _animationController;

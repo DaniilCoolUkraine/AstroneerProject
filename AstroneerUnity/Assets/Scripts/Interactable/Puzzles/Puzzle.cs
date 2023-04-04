@@ -7,6 +7,7 @@ namespace Astroneer.Interactable.Puzzles
     public abstract class Puzzle : MonoBehaviour
     {
         [SerializeField] protected BoolEventSO _onPuzzleCompleted;
+        [SerializeField] protected BoolEventSO _onPuzzleStarted;
 
         [SerializeField] private Transform _endPosition;
         

@@ -25,9 +25,9 @@ namespace Astroneer.Interactable.Puzzles
             _onPuzzleCompleted.OnValueChanged -= IncrementPuzzleIndex;
         }
 
-        private void SwitchPuzzle(bool isShown)
+        private void SwitchPuzzle(bool isShow)
         {
-            if (isShown)
+            if (isShow)
             {
                 CurrentPuzzle.Show();
             }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2132503042642607934}
   - component: {fileID: 2132503042642607904}
   - component: {fileID: 2132503042642607905}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 2132503042710813941}
   - component: {fileID: 2132503042710813943}
   - component: {fileID: 2132503042710813940}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 2132503042744650034}
   - component: {fileID: 2132503042744650037}
   - component: {fileID: 2132503042744650036}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 2132503042771290500}
   - component: {fileID: 2132503042771290502}
   - component: {fileID: 2132503042771290503}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 2132503042821591233}
   - component: {fileID: 2132503042821591263}
   - component: {fileID: 2132503042821591262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 2132503042853891983}
   - component: {fileID: 2132503042853891982}
   - component: {fileID: 2132503042853892081}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 2132503042896473468}
   - component: {fileID: 2132503042896473469}
   - component: {fileID: 2132503042896473466}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 2132503042919236157}
   - component: {fileID: 2132503042919236159}
   - component: {fileID: 2132503042919236156}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132503042941930049}
   - component: {fileID: 2132503042941930048}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DrawPuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,78 +791,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onPuzzleCompleted: {fileID: 11400000, guid: 41fe7ffc97730f541bc8adf41720d451, type: 2}
-  _endPosition: {x: 0, y: 0}
+  _onPuzzleStarted: {fileID: 11400000, guid: bfa5d89aa39320047bbd9a85396c0d1a, type: 2}
+  _endPosition: {fileID: 0}
   _pathPointManager: {fileID: 2132503043312492259}
   _pathFillerManager: {fileID: 2132503043723842358}
   _handle: {fileID: 2132503043926718738}
---- !u!1 &2132503042945683445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2132503042945683446}
-  - component: {fileID: 2132503042945683447}
-  - component: {fileID: 2132503042945683444}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2132503042945683446
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132503042945683445}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2132503043690607060}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2132503042945683447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132503042945683445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &2132503042945683444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132503042945683445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!1 &2132503042946499252
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +807,7 @@ GameObject:
   - component: {fileID: 2132503042946499255}
   - component: {fileID: 2132503042946499257}
   - component: {fileID: 2132503042946499254}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +919,7 @@ GameObject:
   - component: {fileID: 2132503042957684381}
   - component: {fileID: 2132503042957684380}
   - component: {fileID: 2132503042957684378}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1109,7 +1042,7 @@ GameObject:
   - component: {fileID: 2132503042967026223}
   - component: {fileID: 2132503042967026222}
   - component: {fileID: 2132503042967026193}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,7 +1114,7 @@ GameObject:
   - component: {fileID: 2132503043026423591}
   - component: {fileID: 2132503043026423590}
   - component: {fileID: 2132503043026423593}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,7 +1186,7 @@ GameObject:
   - component: {fileID: 2132503043125218816}
   - component: {fileID: 2132503043125218819}
   - component: {fileID: 2132503043125218818}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1325,7 +1258,7 @@ GameObject:
   - component: {fileID: 2132503043193664211}
   - component: {fileID: 2132503043193664213}
   - component: {fileID: 2132503043193664210}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1436,7 +1369,7 @@ GameObject:
   - component: {fileID: 2132503043211559237}
   - component: {fileID: 2132503043211559236}
   - component: {fileID: 2132503043211559239}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1441,7 @@ GameObject:
   - component: {fileID: 2132503043303740813}
   - component: {fileID: 2132503043303740815}
   - component: {fileID: 2132503043303740812}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1579,7 +1512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132503043312492256}
   - component: {fileID: 2132503043312492259}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PathPointsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,7 +1535,7 @@ Transform:
   - {fileID: 2132503042957684379}
   - {fileID: 2132503042821591232}
   m_Father: {fileID: 2132503043690607060}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2132503043312492259
 MonoBehaviour:
@@ -1631,7 +1564,7 @@ GameObject:
   - component: {fileID: 2132503043313535487}
   - component: {fileID: 2132503043313535457}
   - component: {fileID: 2132503043313535486}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1675,7 @@ GameObject:
   - component: {fileID: 2132503043371395789}
   - component: {fileID: 2132503043371395788}
   - component: {fileID: 2132503043371395791}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1812,7 +1745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132503043395291108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MazeWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1849,7 +1782,7 @@ Transform:
   - {fileID: 2132503044290319061}
   - {fileID: 2132503044205664733}
   m_Father: {fileID: 2132503043690607060}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132503043398823302
 GameObject:
@@ -1862,7 +1795,7 @@ GameObject:
   - component: {fileID: 2132503043398823305}
   - component: {fileID: 2132503043398823304}
   - component: {fileID: 2132503043398823307}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1934,7 +1867,7 @@ GameObject:
   - component: {fileID: 2132503043443926146}
   - component: {fileID: 2132503043443926148}
   - component: {fileID: 2132503043443926149}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2044,13 +1977,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2132503043461941064}
   - component: {fileID: 2132503043461941067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2132503043461941064
 Transform:
   m_ObjectHideFlags: 0
@@ -2129,7 +2062,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0.78431374}
+      key0: {r: 0.1966892, g: 0.49056602, b: 0.19810824, a: 0.78431374}
       key1: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0.78431374}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -2156,7 +2089,7 @@ TrailRenderer:
       m_Mode: 1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
+    numCornerVertices: 90
     numCapVertices: 0
     alignment: 0
     textureMode: 0
@@ -2176,7 +2109,7 @@ GameObject:
   - component: {fileID: 2132503043469060914}
   - component: {fileID: 2132503043469060917}
   - component: {fileID: 2132503043469060916}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2248,7 +2181,7 @@ GameObject:
   - component: {fileID: 2132503043515712000}
   - component: {fileID: 2132503043515712003}
   - component: {fileID: 2132503043515712002}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2320,7 +2253,7 @@ GameObject:
   - component: {fileID: 2132503043534578291}
   - component: {fileID: 2132503043534578290}
   - component: {fileID: 2132503043534578293}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2392,7 +2325,7 @@ GameObject:
   - component: {fileID: 2132503043535043642}
   - component: {fileID: 2132503043535043645}
   - component: {fileID: 2132503043535043644}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2465,7 +2398,7 @@ GameObject:
   - component: {fileID: 2132503043578614726}
   - component: {fileID: 2132503043578614727}
   - component: {fileID: 2132503043578614729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2588,7 +2521,7 @@ GameObject:
   - component: {fileID: 2132503043586964364}
   - component: {fileID: 2132503043586964367}
   - component: {fileID: 2132503043586964366}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2699,7 +2632,7 @@ GameObject:
   - component: {fileID: 2132503043629035630}
   - component: {fileID: 2132503043629035600}
   - component: {fileID: 2132503043629035601}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2808,7 +2741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132503043690607060}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2827,7 +2760,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2132503042945683446}
   - {fileID: 2132503043926718743}
   - {fileID: 2132503043395291108}
   - {fileID: 2132503043723842359}
@@ -2846,7 +2778,7 @@ GameObject:
   - component: {fileID: 2132503043721216459}
   - component: {fileID: 2132503043721216461}
   - component: {fileID: 2132503043721216458}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2956,7 +2888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132503043723842359}
   - component: {fileID: 2132503043723842358}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PathFillerHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3000,7 +2932,7 @@ Transform:
   - {fileID: 2132503043887960167}
   - {fileID: 2132503042896473468}
   m_Father: {fileID: 2132503043690607060}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2132503043723842358
 MonoBehaviour:
@@ -3050,7 +2982,7 @@ GameObject:
   - component: {fileID: 2132503043866350246}
   - component: {fileID: 2132503043866350248}
   - component: {fileID: 2132503043866350249}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3161,7 +3093,7 @@ GameObject:
   - component: {fileID: 2132503043887960167}
   - component: {fileID: 2132503043887960166}
   - component: {fileID: 2132503043887960169}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3235,7 +3167,7 @@ GameObject:
   - component: {fileID: 2132503043926718742}
   - component: {fileID: 2132503043926718741}
   - component: {fileID: 2132503043926718738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DragableCircle
   m_TagString: DragableCircle
   m_Icon: {fileID: 0}
@@ -3256,7 +3188,7 @@ Transform:
   m_Children:
   - {fileID: 2132503043461941064}
   m_Father: {fileID: 2132503043690607060}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2132503043926718740
 SpriteRenderer:
@@ -3372,7 +3304,7 @@ GameObject:
   - component: {fileID: 2132503043988716364}
   - component: {fileID: 2132503043988716367}
   - component: {fileID: 2132503043988716366}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3444,7 +3376,7 @@ GameObject:
   - component: {fileID: 2132503044007201271}
   - component: {fileID: 2132503044007201273}
   - component: {fileID: 2132503044007201270}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3516,7 +3448,7 @@ GameObject:
   - component: {fileID: 2132503044086388758}
   - component: {fileID: 2132503044086388760}
   - component: {fileID: 2132503044086388761}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3627,7 +3559,7 @@ GameObject:
   - component: {fileID: 2132503044104160927}
   - component: {fileID: 2132503044104160897}
   - component: {fileID: 2132503044104160926}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3699,7 +3631,7 @@ GameObject:
   - component: {fileID: 2132503044105904305}
   - component: {fileID: 2132503044105904304}
   - component: {fileID: 2132503044105904307}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3771,7 +3703,7 @@ GameObject:
   - component: {fileID: 2132503044180696639}
   - component: {fileID: 2132503044180696638}
   - component: {fileID: 2132503044180696609}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3843,7 +3775,7 @@ GameObject:
   - component: {fileID: 2132503044205664733}
   - component: {fileID: 2132503044205664735}
   - component: {fileID: 2132503044205664732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3954,7 +3886,7 @@ GameObject:
   - component: {fileID: 2132503044290319061}
   - component: {fileID: 2132503044290319063}
   - component: {fileID: 2132503044290319060}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorWall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4065,7 +3997,7 @@ GameObject:
   - component: {fileID: 2132503044308354637}
   - component: {fileID: 2132503044308354639}
   - component: {fileID: 2132503044308354636}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4176,7 +4108,7 @@ GameObject:
   - component: {fileID: 2132503044328162643}
   - component: {fileID: 2132503044328162642}
   - component: {fileID: 2132503044328162645}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4287,7 +4219,7 @@ GameObject:
   - component: {fileID: 2132503044360265111}
   - component: {fileID: 2132503044360265110}
   - component: {fileID: 2132503044360265113}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertFiller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4359,7 +4291,7 @@ GameObject:
   - component: {fileID: 2132503044362362287}
   - component: {fileID: 2132503044362362286}
   - component: {fileID: 2132503044362362257}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4431,7 +4363,7 @@ GameObject:
   - component: {fileID: 2132503044381739808}
   - component: {fileID: 2132503044381739811}
   - component: {fileID: 2132503044381739810}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: HorFiller (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4503,7 +4435,7 @@ GameObject:
   - component: {fileID: 2132503044449347907}
   - component: {fileID: 2132503044449347909}
   - component: {fileID: 2132503044449347906}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: VertWall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -18,7 +18,6 @@ namespace Astroneer.Player
         private float _horizontalInput;
         private readonly string _horizontalInputAxis = "Horizontal";
         
-        // todo rewrite. really
         private bool _isMoving = false;
         private bool IsMoving
         {
@@ -34,6 +33,11 @@ namespace Astroneer.Player
         }
         
         private float _multiplier = 10;
+
+        private void OnDisable()
+        {
+            _rigidbody2D.velocity = Vector2.zero;
+        }
 
         private void Update()
         {

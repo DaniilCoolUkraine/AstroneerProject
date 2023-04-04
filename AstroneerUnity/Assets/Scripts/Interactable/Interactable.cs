@@ -10,7 +10,6 @@ namespace Astroneer.Interactable
         [SerializeField] private Material _outlineMaterial;
         [SerializeField] private Material _defaultMaterial;
         
-        // possibly can be an error
         private IInteractor _interactor;
         
         private void OnTriggerEnter2D(Collider2D other)

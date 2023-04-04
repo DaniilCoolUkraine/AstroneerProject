@@ -23,6 +23,8 @@ namespace Astroneer.Interactable.Puzzles
 
         private void CheckWin()
         {
+            _onPuzzleStarted.ChangeValue(false);
+            
             if (_pathPointManager.IsAllPointsPassed)
             {
                 _onPuzzleCompleted.ChangeValue(true);
