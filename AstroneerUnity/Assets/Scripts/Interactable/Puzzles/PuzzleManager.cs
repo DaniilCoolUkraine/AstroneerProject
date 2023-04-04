@@ -6,7 +6,7 @@ namespace Astroneer.Interactable.Puzzles
     public class PuzzleManager : MonoBehaviour
     {
         [SerializeField] private BoolEventSO _onPuzzleStarted;
-        [SerializeField] private BoolEventSO _onPuzzleCompleted;
+        [SerializeField] private BoolEventSO[] _onPuzzleCompleted;
 
         [SerializeField] private Puzzle[] _puzzles;
 
@@ -16,13 +16,21 @@ namespace Astroneer.Interactable.Puzzles
         private void OnEnable()
         {
             _onPuzzleStarted.OnValueChanged += SwitchPuzzle;
-            _onPuzzleCompleted.OnValueChanged += IncrementPuzzleIndex;
+
+            foreach (BoolEventSO completedEventSo in _onPuzzleCompleted)
+            {
+                completedEventSo.OnValueChanged += IncrementPuzzleIndex;
+            }
         }
-        
+
         private void OnDisable()
         {
             _onPuzzleStarted.OnValueChanged -= SwitchPuzzle;
-            _onPuzzleCompleted.OnValueChanged -= IncrementPuzzleIndex;
+
+            foreach (BoolEventSO completedEventSo in _onPuzzleCompleted)
+            {
+                completedEventSo.OnValueChanged -= IncrementPuzzleIndex;
+            }
         }
 
         private void SwitchPuzzle(bool isShow)
@@ -39,7 +47,7 @@ namespace Astroneer.Interactable.Puzzles
 
         private void IncrementPuzzleIndex(bool isIncrement)
         {
-            if (isIncrement && _currentPuzzleIndex < _puzzles.Length-1)
+            if (isIncrement && _currentPuzzleIndex < _puzzles.Length - 1)
             {
                 _currentPuzzleIndex++;
             }
