@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 2132503042821591263}
   - component: {fileID: 2132503042821591262}
   m_Layer: 7
-  m_Name: Point (2)
+  m_Name: Finish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -792,10 +792,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onPuzzleCompleted: {fileID: 11400000, guid: 41fe7ffc97730f541bc8adf41720d451, type: 2}
   _onPuzzleStarted: {fileID: 11400000, guid: bfa5d89aa39320047bbd9a85396c0d1a, type: 2}
+  _transitionDuration: 1
   _endPosition: {fileID: 0}
   _pathPointManager: {fileID: 2132503043312492259}
   _pathFillerManager: {fileID: 2132503043723842358}
   _handle: {fileID: 2132503043926718738}
+  _trail: {fileID: 2132503043461941067}
 --- !u!1 &2132503042946499252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,7 +2009,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132503043461941065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2040,7 +2042,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Time: 60
   m_Parameters:
     serializedVersion: 3
@@ -2063,7 +2065,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.1966892, g: 0.49056602, b: 0.19810824, a: 0.78431374}
-      key1: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0.78431374}
+      key1: {r: 0.19607843, g: 0.49019608, b: 0.2, a: 0.78431374}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -2090,7 +2092,7 @@ TrailRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 90
-    numCapVertices: 0
+    numCapVertices: 90
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
@@ -3232,7 +3234,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.12103952, g: 0.3018868, b: 0.123450816, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3277,7 +3279,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &2132503043926718738
 MonoBehaviour:

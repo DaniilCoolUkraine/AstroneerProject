@@ -20,7 +20,7 @@ namespace Astroneer.Cameras
 
         public void DoFade(bool isFade)
         {
-            float fadeValue = isFade ? 0.5f : 0;
+            float fadeValue = isFade ? 0.8f : 0;
             _sprite.DOFade(fadeValue, _transitionDuration);
         }
     }

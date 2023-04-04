@@ -9,6 +9,7 @@ namespace Astroneer.Interactable.Puzzles
         [SerializeField] protected BoolEventSO _onPuzzleCompleted;
         [SerializeField] protected BoolEventSO _onPuzzleStarted;
 
+        [SerializeField] protected float _transitionDuration;
         [SerializeField] private Transform _endPosition;
         
         private Vector2 _startPosition;
@@ -18,14 +19,14 @@ namespace Astroneer.Interactable.Puzzles
             _startPosition = transform.localPosition;
         }
 
-        public void Show()
+        public virtual void Show()
         {
-            transform.DOLocalMove(_endPosition.position, 1);
+            transform.DOLocalMove(_endPosition.position, _transitionDuration);
         }
 
-        public void Hide()
+        public virtual void Hide()
         {
-            transform.DOLocalMove(_startPosition, 1);
+            transform.DOLocalMove(_startPosition, _transitionDuration);
         }
     }
 }
