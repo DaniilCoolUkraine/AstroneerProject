@@ -10,7 +10,6 @@ namespace Astroneer.Interactable
         [SerializeField] private Material _outlineMaterial;
         [SerializeField] private Material _defaultMaterial;
         
-        // possibly can be an error
         private IInteractor _interactor;
         
         private void OnTriggerEnter2D(Collider2D other)
@@ -23,7 +22,7 @@ namespace Astroneer.Interactable
             }
             
             _sprite.material = _outlineMaterial;
-            _interactor.Interactable.Add(this);
+            _interactor.Interactable = this;
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -36,14 +35,14 @@ namespace Astroneer.Interactable
             }
 
             _sprite.material = _defaultMaterial;
-            _interactor.Interactable.Remove(this);
+            _interactor.Interactable = null;
         }
 
         private void OnDisable()
         {
             if (_interactor != null)
             {
-                _interactor.Interactable.Remove(this);
+                _interactor.Interactable = null;
             }
         }
 

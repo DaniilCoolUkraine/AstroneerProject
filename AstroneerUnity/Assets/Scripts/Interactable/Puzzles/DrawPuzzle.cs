@@ -26,7 +26,6 @@ namespace Astroneer.Interactable.Puzzles
             if (_pathPointManager.IsAllPointsPassed)
             {
                 _onPuzzleCompleted.ChangeValue(true);
-                Debug.Log("win");
             }
             else
             {
