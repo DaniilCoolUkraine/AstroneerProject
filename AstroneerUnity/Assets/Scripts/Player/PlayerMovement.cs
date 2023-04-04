@@ -16,6 +16,7 @@ namespace Astroneer.Player
         private Vector3 _velocity = Vector3.zero;
 
         private float _horizontalInput;
+        private readonly string _horizontalInputAxis = "Horizontal";
         
         // todo rewrite. really
         private bool _isMoving = false;
@@ -36,7 +37,7 @@ namespace Astroneer.Player
 
         private void Update()
         {
-            _horizontalInput = Input.GetAxisRaw("Horizontal");
+            _horizontalInput = Input.GetAxisRaw(_horizontalInputAxis);
 
             if (_horizontalInput != 0)
             {
