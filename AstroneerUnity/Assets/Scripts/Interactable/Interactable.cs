@@ -37,15 +37,7 @@ namespace Astroneer.Interactable
             _sprite.material = _defaultMaterial;
             _interactor.Interactable = null;
         }
-
-        private void OnDisable()
-        {
-            if (_interactor != null)
-            {
-                _interactor.Interactable = null;
-            }
-        }
-
+        
         public abstract void Interact();
     }
 }

@@ -17,8 +17,8 @@ namespace Astroneer.Player
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Interactable.Interact();   
-                
+                Interactable.Interact();
+
                 OnPlayerInteract?.Invoke(true);
             }
         }
