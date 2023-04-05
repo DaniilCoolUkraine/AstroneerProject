@@ -9,20 +9,23 @@ namespace Astroneer.Interactable.Puzzles
         [SerializeField] protected BoolEventSO _onPuzzleCompleted;
         [SerializeField] protected BoolEventSO _onPuzzleStarted;
 
+        private Camera _mainCamera;
         [SerializeField] protected float _transitionDuration;
-        [SerializeField] private Transform _endPosition;
         
+        private Vector2 _endPosition;
         private Vector2 _startPosition;
 
         private void Awake()
         {
+            _mainCamera = Camera.main;
             _startPosition = transform.localPosition;
         }
 
         public virtual void Show()
         {
-            transform.DOLocalMove(_endPosition.position, _transitionDuration);
-        }
+            _endPosition = (Vector2)_mainCamera.transform.position - new Vector2(3, 3);
+            transform.DOMove(_endPosition, _transitionDuration);
+        } 
 
         public virtual void Hide()
         {

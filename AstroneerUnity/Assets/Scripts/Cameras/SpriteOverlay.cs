@@ -14,8 +14,8 @@ namespace Astroneer.Cameras
         {
             float height = 2f * _mainCamera.orthographicSize;
             float width = height * _mainCamera.aspect;
-            
-            _sprite.transform.localScale = new Vector2(width, height);
+         
+            _sprite.size = new Vector2(width, height);
         }
 
         public void DoFade(bool isFade)
