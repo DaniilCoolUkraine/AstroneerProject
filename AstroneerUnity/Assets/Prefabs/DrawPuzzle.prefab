@@ -771,8 +771,8 @@ Transform:
   m_GameObject: {fileID: 2132503042941930078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2132503043690607060}
   m_Father: {fileID: 0}
@@ -793,7 +793,7 @@ MonoBehaviour:
   _onPuzzleCompleted: {fileID: 11400000, guid: 41fe7ffc97730f541bc8adf41720d451, type: 2}
   _onPuzzleStarted: {fileID: 11400000, guid: bfa5d89aa39320047bbd9a85396c0d1a, type: 2}
   _transitionDuration: 1
-  _endPosition: {fileID: 0}
+  _offset: {x: 1.5, y: 1.5}
   _pathPointManager: {fileID: 2132503043312492259}
   _pathFillerManager: {fileID: 2132503043723842358}
   _handle: {fileID: 2132503043926718738}
@@ -1996,7 +1996,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2132503043926718743}
   m_RootOrder: 0
@@ -2052,7 +2052,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.50476265
         inSlope: 0
         outSlope: 0
         tangentMode: 0
